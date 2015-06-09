@@ -17,8 +17,8 @@
     "watchify": "~2.1.0"
   },
   "scripts": {
-    "start": "watchify -o js/bundle.js -v -d .",
-    "build": "browserify . | uglifyjs -cm > js/bundle.min.js"
+    "watch": "watchify -o js/bundle.js -v -d .",
+    "start": "browserify .  -cm  > js/bundle.js"
   },
   "author": "Madhu Yamulapalli",
   "browserify": {
@@ -28,3 +28,5 @@
     ]
   }
 }
+
+
